@@ -16,20 +16,20 @@ provided by NASA is being used in this project to determine whether the machine 
 
 ## Evaluation Result
 1. Random Forest
-   - Accuracy: 96.75%
-   - Precision: 74.83%
-   - Recall: 94.11%
-   = F1 Score: 83.37%
+   - `Accuracy`: 96.75%
+   - `Precision`: 74.83%
+   - `Recall`: 94.11%
+   - `F1 Score`: 83.37%
 2. Artificial Neural Network
-   - Accuracy: 96.77%
-   - Precision: 75.22%
-   - Recall: 93.55%
-   = F1 Score: 83.39%
+   - `Accuracy`: 96.77%
+   - `Precision`: 75.22%
+   - `Recall`: 93.55%
+   - `F1 Score`: 83.39%
 
 ## Flask App Result
 1. Homepage
-![homepage](aset/tampilan awal.jpeg)
-2. Machine Status: Normal
-![normal](aset/tampilan mesin failure.jpeg)
-3. Machine Status: Failure
-![failure](aset/tampilan mesin failure.jpeg)
+![](asset/tampilan-awal.jpeg)
+3. Machine Status: Normal
+![](asset/tampilan-mesin-failure.jpeg)
+4. Machine Status: Failure
+![](asset/tampilan-mesin-failure.jpeg)
