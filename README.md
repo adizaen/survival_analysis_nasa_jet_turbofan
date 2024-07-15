@@ -30,6 +30,6 @@ provided by NASA is being used in this project to determine whether the machine 
 1. Homepage
 ![](asset/tampilan-awal.jpeg)
 3. Machine Status: Normal
-![](asset/tampilan-mesin-failure.jpeg)
+![](asset/tampilan-mesin-normal.jpeg)
 4. Machine Status: Failure
 ![](asset/tampilan-mesin-failure.jpeg)
