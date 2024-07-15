@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Deteksi Penipuan Kartu Kredit</title>
+
+    <!-- <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="bg-dark">
+        <p class="heading">PREDICTIVE MAINTENANCE OF JET ENGINE</p>
+    </header>
+
+    <div class="container">
+        <div class="alert alert-info alert-informasi" role="alert">
+            <h4 class="alert-heading">Tentang Aplikasi</h4>
+            <hr>
+            <li class="ml-3"><strong>Predictive Maintenance of Jet Engine</strong> berfungsi sebagai alat deteksi dini kerusakan mesin.</li>
+            <li class="ml-3">Aplikasi ini menggunakan model <strong>Random Forest</strong> yang telah dilatih sebelumnya</li>
+            <li class="ml-3">Model yang digunakan memiliki akurasi yang tinggi sebesar <strong>96%</strong></li>
+            <li class="ml-3">Isi form dibawah ini untuk memasukkan data sensor dan gunakan tombol <strong>TAB</strong> untuk berpindah kolom isian</li>
+            <li class="ml-3">Hasil akan menunjukan kondisi mesin apakah <strong>NORMAL</strong> atau
+                <strong>FAILURE</strong> berdasarkan model yang telah dilatih
+            </li>
+        </div>
+
+        <div class="alert alert-success alert-data" role="alert">
+            <h4 class="alert-heading">Form Data Sensor</h4>
+            <hr>
+            <form action="/getResult" method="post" role="form" id="form-data">
+                <div class="row my-2">
+                    <label for="sensor2" class="col col-form-label">LPC Outlet Temp. (°R)</label>
+                    <div class="col-sm-12 col-md-3 input-group-sm">
+                        <input type="number" class="form-control" id="sensor2" name="sensor2" autofocus>
+                    </div>
+                    <label for="sensor3" class="col col-form-label">HPC Outlet Temp. (°R)</label>
+                    <div class="col-sm-12 col-md-3 input-group-sm">
+                        <input type="number" class="form-control" id="sensor3" name="sensor3">
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <label for="sensor4" class="col col-form-label">LPT Outlet Temp. (°R)</label>
+                    <div class="col-sm-12 col-md-3 input-group-sm">
+                        <input type="number" class="form-control" id="sensor4" name="sensor4">
+                    </div>
+                    <label for="sensor7" class="col col-form-label">Total Pressure at HPC Outlet (psia)</label>
+                    <div class="col-sm-12 col-md-3 input-group-sm">
+                        <input type="number" class="form-control" id="sensor7" name="sensor7">
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <label for="sensor8" class="col col-form-label">Physical Fan Speed (rpm)</label>
+                    <div class="col-sm-12 col-md-3 input-group-sm">
+                        <input type="number" class="form-control" id="sensor8" name="sensor8">
+                    </div>
+                    <label for="sensor9" class="col col-form-label">Physical Core Speed (rpm)</label>
+                    <div class="col-sm-12 col-md-3 input-group-sm">
+                        <input type="number" class="form-control" id="sensor9" name="sensor9">
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <label for="sensor11" class="col col-form-label">Static Pressure at HPC Outlet (psia)</label>
+                    <div class="col-sm-12 col-md-3 input-group-sm">
+                        <input type="number" class="form-control" id="sensor11" name="sensor11">
+                    </div>
+                    <label for="sensor12" class="col col-form-label">Ratio of Fuel Flow to Ps30 (pps/psi)</label>
+                    <div class="col-sm-12 col-md-3 input-group-sm">
+                        <input type="number" class="form-control" id="sensor12" name="sensor12">
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <label for="sensor13" class="col col-form-label">Corrected Fan Speed (rpm)</label>
+                    <div class="col-sm-12 col-md-3 input-group-sm">
+                        <input type="number" class="form-control" id="sensor13" name="sensor13">
+                    </div>
+                    <label for="sensor14" class="col col-form-label">Corrected Core Speed (rpm)</label>
+                    <div class="col-sm-12 col-md-3 input-group-sm">
+                        <input type="number" class="form-control" id="sensor14" name="sensor14">
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <label for="sensor15" class="col col-form-label">Bypass Ratio</label>
+                    <div class="col-sm-12 col-md-3 input-group-sm">
+                        <input type="number" class="form-control" id="sensor15" name="sensor15">
+                    </div>
+                    <label for="sensor17" class="col col-form-label">Bleed Enthalpy</label>
+                    <div class="col-sm-12 col-md-3 input-group-sm">
+                        <input type="number" class="form-control" id="sensor17" name="sensor17">
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <label for="sensor20" class="col col-form-label">HPT Coolant Bleed (lbm/s)</label>
+                    <div class="col-sm-12 col-md-3 input-group-sm">
+                        <input type="number" class="form-control" id="sensor20" name="sensor20">
+                    </div>
+                    <label for="sensor21" class="col col-form-label">LPT Coolant Bleed (lbm/s)</label>
+                    <div class="col-sm-12 col-md-3 input-group-sm">
+                        <input type="number" class="form-control" id="sensor21" name="sensor21">
+                    </div>
+                </div>
+
+                <div class="row my-2 mt-4 px-2">
+                    <button type="submit" class="btn btn-success btn-submit py-2">Cek Status</button>
+                </div>
+            </form>
+        </div>
+        <div class="alert alert-success text-center result_area" role="alert" id="alert-hasil">
+            <p class="">Hasil Pengecekan</p>
+            <hr>
+            <h3 class="py-2 fw-bolder text-hasil">-</h3>
+            <button type="button" class="btn btn-outline-success btn-refill py-2 px-4 mt-2">Cek Ulang</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/myScript.js') }}"></script>
+</body>
+
+</html>
