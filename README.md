@@ -28,8 +28,8 @@ provided by NASA is being used in this project to determine whether the machine 
 
 ## Flask App Result
 1. Homepage
-![](asset/tampilan awal.jpeg)
+![](asset/tampilan-awal.jpeg)
 3. Machine Status: Normal
-![](asset/tampilan mesin failure.jpeg)
+![](asset/tampilan-mesin-failure.jpeg)
 4. Machine Status: Failure
-![](asset/tampilan mesin failure.jpeg)
+![](asset/tampilan-mesin-failure.jpeg)
