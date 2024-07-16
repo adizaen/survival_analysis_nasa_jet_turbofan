@@ -1,6 +1,8 @@
 # Predictive Maintenance Engine Classification for NASA Turbofan Engines
 
-![](asset/jet-engine.png)
+<p align="center">
+  <img src="asset/jet-engine.png">
+</p>
 
 ## Overview
 Jet engines are one of the crucial components used in NASA's space industry. This engine is used as a source of power for a vehicle such as an airplane to be able to fly with the thrust generated from the engine. Seeing how crucial the role of the engine in a vehicle, an analysis is needed that is able to predict the health of the engine whether it is still functioning normally or has begun to require further maintenance. This aims to avoid sudden engine failure that could potentially endanger the vehicle. One way to measure engine performance is by using sensors. These sensors work to find out various things such as temperature, rotation, pressure, engine vibration, and others. Therefore, in this project, an analysis process will be carried out to predict engine health based on sensor data before the engine actually dies.
@@ -47,7 +49,7 @@ To operate flask app, follow the steps below:
 7. Finish.
 
 ## Evaluation Result
-|    Metrics   | Random Forest | Artificial Neural Network |
+|    Metrics Evaluation   | Random Forest | Artificial Neural Network |
 | :---         |     :---:     |           :---:           |
 | Accuracy     | 96.75%        | 96.77%                    |
 | Precision    | 74.83%        | 75.22%                    |
@@ -57,9 +59,12 @@ To operate flask app, follow the steps below:
 The priority evaluation metric for this project is the recall value. The higher the recall value, the better the model is able to predict machine failure. From these results it can be concluded that the random forest model has a higher recall value. Therefore, in the flask app, a random forest model will be used to predict new data.
 
 ## Flask App Result
-1. Homepage
-![](asset/tampilan-awal.jpeg)
-3. Machine Status: Normal
-![](asset/tampilan-mesin-normal.jpeg)
-4. Machine Status: Failure
-![](asset/tampilan-mesin-failure.jpeg)
+<p align="center">
+  <img src="asset/engine-description.png">
+</p>
+
+This Flask app only requires 14 sensor data to be able to predict whether a machine is normal or has failed. These sensors are: `LPC Outlet Temp. (°R)`, `HPC Outlet Temp. (°R)`, `LPT Outlet Temp. (°R)`, `Total Pressure at HPC Outlet (psia)`, `Physical Fan Speed (rpm)`, `Physical Core Speed (rpm)`, `Static Pressure at HPC Outlet (psia)`, `Ratio of Fuel Flow to Ps30 (pps/psi)`, `Corrected Fan Speed (rpm)`, `Corrected Core Speed (rpm)`, `Bypass Ratio`, `Bleed Enthalpy`, `HPT Coolant Bleed (lbm/s)`, `LPT Coolant Bleed (lbm/s)`. The following is the flask app display for initial conditions, when the machine is predicted to be normal and failure.
+
+|            Homepage            |              Engine Normal             |             Engine Failure              |
+|              :---:             |                  :---:                 |                  :---:                  |
+| ![](asset/tampilan-awal.jpeg)  | ![](asset/tampilan-mesin-normal.jpeg)  | ![](asset/tampilan-mesin-failure.jpeg)  |
