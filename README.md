@@ -45,16 +45,14 @@ To operate flask app, follow the steps below:
 7. Finish.
 
 ## Evaluation Result
-1. Random Forest
-   - `Accuracy`: 96.75%
-   - `Precision`: 74.83%
-   - `Recall`: 94.11%
-   - `F1 Score`: 83.37%
-2. Artificial Neural Network
-   - `Accuracy`: 96.77%
-   - `Precision`: 75.22%
-   - `Recall`: 93.55%
-   - `F1 Score`: 83.39%
+|    Metrics   | Random Forest | Artificial Neural Network |
+| :---         |     :---:     |           :---:           |
+| Accuracy     | 96.75%        | 96.77%                    |
+| Precision    | 74.83%        | 75.22%                    |
+| Recall       | 94.11%        | 93.55%                    |
+| F1 Score     | 83.37%        | 83.39%                    |
+
+The priority evaluation metric for this project is the recall value. The higher the recall value, the better the model is able to predict machine failure. From these results it can be concluded that the random forest model has a higher recall value. Therefore, in the flask app, a random forest model will be used to predict new data.
 
 ## Flask App Result
 1. Homepage
