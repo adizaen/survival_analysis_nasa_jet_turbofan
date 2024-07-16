@@ -14,6 +14,21 @@ provided by NASA is being used in this project to determine whether the machine 
 3. `flask`. This folder contains a flask environment that is used to create a dashboard so that users are facilitated by only entering sensor data and then getting machine classification results without having to know the program code that works behind it.
 4. `Survival_Analysis_Predictive_Maintenance.ipynb`. This file contains program code in the process of processing NASA datasets starting from business understanding, data understanding, data preparation, modeling, and evaluation (CRISP-DM methodology). From this file, the dataset is processed in such a way as to produce a model that is ready to be used for classification on the dashboard.
 
+## Flask Setup
+To operate flask app, follow the steps below:
+1. Create virtual environment (venv)
+   `pip python -m venv venv`
+2. Activate venv
+   Go to venv > Scripts folder. Then run this command to activate venv.
+   `activate`
+3. Install dependencies
+   Go to main folder and run this command to install all dependencies listed in requirements.txt file.
+   `pip install -r requirements.txt`
+3. Run flask on venv
+   Finally, run this command to run flask app in venv.
+   `flask run`
+   Open browser app (e.g. Chrome) and then go to `localhost:5000`. Finish.
+
 ## Evaluation Result
 1. Random Forest
    - `Accuracy`: 96.75%
