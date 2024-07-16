@@ -1,7 +1,7 @@
 # Predictive Maintenance Engine Classification for NASA Turbofan Engines
 
 <p align="center">
-  <img src="(asset/jet-engine.png">
+  <img src="asset/jet-engine.png">
 </p>
 
 ## Overview
