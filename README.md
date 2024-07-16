@@ -16,16 +16,16 @@ provided by NASA is being used in this project to determine whether the machine 
 
 ## Flask Setup
 To operate flask app, follow the steps below:
-1. Create virtual environment (venv)__
+1. Create virtual environment (venv)  
    `pip python -m venv venv`
 2. Activate venv  
-   Go to venv > Scripts folder. Then run this command to activate venv._
+   Go to venv > Scripts folder. Then run this command to activate venv.  
    `activate`
-3. Install dependencies_
-   Go to main folder and run this command to install all dependencies listed in requirements.txt file._
+3. Install dependencies  
+   Go to main folder and run this command to install all dependencies listed in requirements.txt file.  
    `pip install -r requirements.txt`
-4. Run flask on venv_
-   Finally, run this command to run flask app in venv._
+4. Run flask on venv  
+   Finally, run this command to run flask app in venv.  
    `flask run`
 5. Open browser app (e.g. Chrome) and then go to `localhost:5000`
 6. Finish
