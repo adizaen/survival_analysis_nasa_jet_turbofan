@@ -25,7 +25,7 @@ To operate flask app, follow the steps below:
    `cd venv\Scripts`  
    `activate`
 3. Install dependencies.  
-   Go to `flask` directory and run command to install all dependencies listed in requirements.txt file. 
+   Go to `flask` directory and run command to install all dependencies listed in requirements.txt file.  
    `cd ..\..`  
    `pip install -r requirements.txt`
 4. Run flask from virtual environment.  
