@@ -1,5 +1,7 @@
 # Predictive Maintenance Engine Classification for NASA Turbofan Engines
 
+![](asset/jet-engine.png)
+
 ## Overview
 Jet engines are one of the crucial components used in NASA's space industry. This engine is used as a source of power for a vehicle such as an airplane to be able to fly with the thrust generated from the engine. Seeing how crucial the role of the engine in a vehicle, an analysis is needed that is able to predict the health of the engine whether it is still functioning normally or has begun to require further maintenance. This aims to avoid sudden engine failure that could potentially endanger the vehicle. One way to measure engine performance is by using sensors. These sensors work to find out various things such as temperature, rotation, pressure, engine vibration, and others. Therefore, in this project, an analysis process will be carried out to predict engine health based on sensor data before the engine actually dies.
 
