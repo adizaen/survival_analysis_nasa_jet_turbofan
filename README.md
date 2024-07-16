@@ -24,10 +24,10 @@ To operate flask app, follow the steps below:
 3. Install dependencies
    Go to main folder and run this command to install all dependencies listed in requirements.txt file.
    `pip install -r requirements.txt`
-3. Run flask on venv
+4. Run flask on venv
    Finally, run this command to run flask app in venv.
    `flask run`
-   Open browser app (e.g. Chrome) and then go to `localhost:5000`. Finish.
+5. Open browser app (e.g. Chrome) and then go to `localhost:5000`. Finish.
 
 ## Evaluation Result
 1. Random Forest
