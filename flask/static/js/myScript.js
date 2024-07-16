@@ -46,11 +46,11 @@ $(document).ready(function() {
             })
             .done(function(data) {
                 if (data == 0) {
-                    $('.text-hasil').text("MESIN NORMAL");
+                    $('.text-hasil').text("NORMAL");
                     $('#alert-hasil').removeClass('alert-danger');
                     $('#alert-hasil').addClass('alert-success');
                 } else {
-                    $('.text-hasil').text("MESIN FAILURE");
+                    $('.text-hasil').text("FAILURE");
                     $('#alert-hasil').removeClass('alert-success');
                     $('#alert-hasil').addClass('alert-danger');
                 }

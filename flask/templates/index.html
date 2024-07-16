@@ -20,19 +20,19 @@
 
     <div class="container">
         <div class="alert alert-info alert-informasi" role="alert">
-            <h4 class="alert-heading">Tentang Aplikasi</h4>
+            <h4 class="alert-heading">About</h4>
             <hr>
-            <li class="ml-3"><strong>Predictive Maintenance of Jet Engine</strong> berfungsi sebagai alat deteksi dini kerusakan mesin.</li>
-            <li class="ml-3">Aplikasi ini menggunakan model <strong>Random Forest</strong> yang telah dilatih sebelumnya</li>
-            <li class="ml-3">Model yang digunakan memiliki akurasi yang tinggi sebesar <strong>96%</strong></li>
-            <li class="ml-3">Isi form dibawah ini untuk memasukkan data sensor dan gunakan tombol <strong>TAB</strong> untuk berpindah kolom isian</li>
-            <li class="ml-3">Hasil akan menunjukan kondisi mesin apakah <strong>NORMAL</strong> atau
-                <strong>FAILURE</strong> berdasarkan model yang telah dilatih
+            <li class="ml-3"><strong>Predictive Maintenance of Jet Engine</strong> serves as an early detection tool for engine damage.</li>
+            <li class="ml-3">This application uses a pre-trained <strong>Random Forest</strong> model.</li>
+            <li class="ml-3">The model used has a high accuracy up to <strong>96%</strong>.</li>
+            <li class="ml-3">Fill in the form below to enter sensor data and use the TAB <strong>TAB</strong> key to move the field.</li>
+            <li class="ml-3">Results will show the condition of the engine whether <strong>NORMAL</strong> or
+                <strong>FAILURE</strong> based on the model that has been trained.
             </li>
         </div>
 
         <div class="alert alert-success alert-data" role="alert">
-            <h4 class="alert-heading">Form Data Sensor</h4>
+            <h4 class="alert-heading">Sensor Data</h4>
             <hr>
             <form action="/getResult" method="post" role="form" id="form-data">
                 <div class="row my-2">
@@ -113,15 +113,15 @@
                 </div>
 
                 <div class="row my-2 mt-4 px-2">
-                    <button type="submit" class="btn btn-success btn-submit py-2">Cek Status</button>
+                    <button type="submit" class="btn btn-success btn-submit py-2">Check</button>
                 </div>
             </form>
         </div>
         <div class="alert alert-success text-center result_area" role="alert" id="alert-hasil">
-            <p class="">Hasil Pengecekan</p>
+            <p class="">Checking Result</p>
             <hr>
             <h3 class="py-2 fw-bolder text-hasil">-</h3>
-            <button type="button" class="btn btn-outline-success btn-refill py-2 px-4 mt-2">Cek Ulang</button>
+            <button type="button" class="btn btn-outline-success btn-refill py-2 px-4 mt-2">Recheck Status</button>
         </div>
     </div>
 
