@@ -17,22 +17,32 @@ provided by NASA is being used in this project to determine whether the machine 
 ## Flask Setup
 To operate flask app, follow the steps below:
 1. From main directory, go to **flask** directory.  
-   `cd flask`
+   ```
+   cd flask
+   ````
 2. Create virtual environment (venv) on **flask** directory.  
-   `python -m venv venv`
-2. Activate virtual environment.  
+   ```
+   python -m venv venv
+   ```
+3. Activate virtual environment.  
    Go to **venv** > **Scripts** directory. Then run command to activate venv.  
-   `cd venv\Scripts`  
-   `activate`
-3. Install dependencies.  
+   ```
+   cd venv\Scripts 
+   activate
+   ```
+4. Install dependencies.  
    Back to **flask** directory and run command to install all dependencies listed in requirements.txt file.  
-   `cd ..\..`  
-   `pip install -r requirements.txt`
-4. Run flask from virtual environment.  
+   ```
+   cd ..\.. 
+   pip install -r requirements.txt
+   ```
+5. Run flask from virtual environment.  
    Finally, run this command to run flask app in venv.  
-   `flask run`
-5. Open browser app (e.g. Chrome) and then go to `localhost:5000` address.
-6. Finish.
+   ```
+   flask run
+   ```
+6. Open browser app (e.g. Chrome) and then go to `localhost:5000` address.
+7. Finish.
 
 ## Evaluation Result
 1. Random Forest
