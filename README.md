@@ -49,7 +49,7 @@ To operate flask app, follow the steps below:
 7. Finish.
 
 ## Evaluation Result
-|    Metrics   | Random Forest | Artificial Neural Network |
+|    Metrics Evaluation   | Random Forest | Artificial Neural Network |
 | :---         |     :---:     |           :---:           |
 | Accuracy     | 96.75%        | 96.77%                    |
 | Precision    | 74.83%        | 75.22%                    |
@@ -66,5 +66,5 @@ The priority evaluation metric for this project is the recall value. The higher 
 This Flask app only requires 14 sensor data to be able to predict whether a machine is normal or has failed. These sensors are: `LPC Outlet Temp. (°R)`, `HPC Outlet Temp. (°R)`, `LPT Outlet Temp. (°R)`, `Total Pressure at HPC Outlet (psia)`, `Physical Fan Speed (rpm)`, `Physical Core Speed (rpm)`, `Static Pressure at HPC Outlet (psia)`, `Ratio of Fuel Flow to Ps30 (pps/psi)`, `Corrected Fan Speed (rpm)`, `Corrected Core Speed (rpm)`, `Bypass Ratio`, `Bleed Enthalpy`, `HPT Coolant Bleed (lbm/s)`, `LPT Coolant Bleed (lbm/s)`. The following is the flask app display for initial conditions, when the machine is predicted to be normal and failure.
 
 |            Homepage            |              Engine Normal             |             Engine Failure              |
-|              :---              |                  :---:                 |                  :---:                  |
+|              :---:             |                  :---:                 |                  :---:                  |
 | ![](asset/tampilan-awal.jpeg)  | ![](asset/tampilan-mesin-normal.jpeg)  | ![](asset/tampilan-mesin-failure.jpeg)  |
