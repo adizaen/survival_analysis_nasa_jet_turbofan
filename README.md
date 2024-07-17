@@ -19,6 +19,8 @@ provided by NASA is being used in this project to determine whether the machine 
 4. `Survival_Analysis_Predictive_Maintenance.ipynb`. This file contains program code in the process of processing NASA datasets starting from business understanding, data understanding, data preparation, modeling, and evaluation (CRISP-DM methodology). From this file, the dataset is processed in such a way as to produce a model that is ready to be used for classification on the dashboard.
 
 ## Flask Setup
+> [!IMPORTANT]
+> Since it has been tested on our system, we recommend using Python version 3.11.
 To operate flask app, follow the steps below:
 1. From main directory, go to **flask** directory.  
    ```python
